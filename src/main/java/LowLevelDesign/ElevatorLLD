@@ -1,0 +1,20 @@
+funtions:
+
+Client
+Wing
+Floor
+direction
+
+ElevatorSystem
+getElevator(wing , current_floor , direction )
+
+
+Lift
+{
+current direction
+current floor
+destination floors
+
+}
+
+
