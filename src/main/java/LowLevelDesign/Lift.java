@@ -18,7 +18,7 @@ public class Lift extends Thread {
     private Wing wing;
     private int current_floor;
     private static int max_floor;
-    private  static int min_floor;
+    private static int min_floor;
     private BlockingQueue<Integer> destinationFloor;
     private Direction direction;
     boolean isActive;
@@ -31,7 +31,7 @@ public class Lift extends Thread {
         this.direction = Direction.IDEAL;
         this.max_floor = maxFloor;
         this.isActive = false;
-        this.min_floor=min_floor;
+        this.min_floor = min_floor;
     }
 
     public Direction getDirection() {
@@ -42,13 +42,14 @@ public class Lift extends Thread {
         while (true) {
             synchronized (destinationFloor) {
                 try {
-                    if (destinationFloor.contains(current_floor))
+                    if (destinationFloor.contains(current_floor)) {
                         destinationFloor.remove(current_floor);
-
+                        System.out.println("Floor reached waiting for people at floor  " + current_floor);
+                        sleep(10);
+                    }
                     if (destinationFloor.size() != 0) {
                         gotoFloor();
                     }
-
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -74,7 +75,7 @@ public class Lift extends Thread {
     }
 
     boolean validFloor(int floor) {
-        return floor > max_floor  && floor < min_floor? false : true;
+        return floor > max_floor && floor < min_floor ? false : true;
     }
 
 
@@ -82,8 +83,7 @@ public class Lift extends Thread {
         return current_floor;
     }
 
-    public boolean reachedDestination(int destination)
-    {
+    public boolean reachedDestination(int destination) {
         return current_floor == destination;
     }
 }

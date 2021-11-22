@@ -11,11 +11,11 @@ public class ElevatorClientService {
     private static LiftClientWithoutDestination l6 = new LiftClientWithoutDestination(Wing.PACIFICA_A, 3,service);
 
     public static void main (String[] args) throws InterruptedException {
-
-        System.out.println("thread name " + Thread.currentThread().getName());
+        registerLifts();
+        System.out.println("Serving another request" + Thread.currentThread().getName());
         client1.callElevator();
         System.out.println("Serving another request " + Thread.currentThread().getName());
-        l2.callElevator();
+        l4.callElevator();
     }
 
 

@@ -26,15 +26,11 @@ public class LiftClientWithoutDestination {
         isActive = true;
         request.setDestinationFloor(floor);
         Lift lift = service.getElevator(request);
-        System.out.println("lift allocated for destination" + lift.getId());
         while (!lift.reachedDestination(floor))
         {
             System.out.println( " floor  reached  " + lift.getCurrent_floor());
         }
-        System.out.println( "destination floor  reached  " + lift.getCurrent_floor());
-        System.out.println("passenger loading " );
-        lift.sleep(10);
-        isActive = false;
+        System.out.println( "destination floor  reached  " + lift.getCurrent_floor());isActive = false;
        // lift.set
     }
 

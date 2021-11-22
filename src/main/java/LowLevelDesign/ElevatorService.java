@@ -23,8 +23,10 @@ public class ElevatorService {
 
     private Lift getElevatorNumber(final Wing wing, final int destinationFloor, Direction requestedDirection) {
 
-        Lift sectedLift= currentLifts.stream().findAny().get();
-        System.out.println("lift allocated  "+ sectedLift.getId() + " current Floor "+sectedLift.getCurrent_floor());
+        Lift sectedLift= currentLifts.stream().
+                filter(lift -> lift.getWing().equals(wing))
+        .findAny().get();
+        System.out.println("lift allocated  "+ sectedLift.getLiftId() + " at current Floor "+sectedLift.getCurrent_floor());
         sectedLift.addDestinations(destinationFloor);
     /*            .filter(lift -> wing.equals(lift.getWing()))
                 .filter(lift -> requestedDirection.equals(lift.getDirection()))
