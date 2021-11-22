@@ -1,7 +1,4 @@
-package LowLevelDesign.ElevatorDesign.Model;
-
-import LowLevelDesign.ElevatorDesign.Model.Direction;
-import LowLevelDesign.ElevatorDesign.Model.Wing;
+package LowLevelDesign.ElevatorDesign.model;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;

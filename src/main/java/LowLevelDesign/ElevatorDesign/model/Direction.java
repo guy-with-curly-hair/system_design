@@ -1,4 +1,4 @@
-package LowLevelDesign.ElevatorDesign.Model;
+package LowLevelDesign.ElevatorDesign.model;
 
 public enum Direction {
     UPWARD,

@@ -1,7 +1,7 @@
 package LowLevelDesign.ElevatorDesign.request;
 
-import LowLevelDesign.ElevatorDesign.Model.Direction;
-import LowLevelDesign.ElevatorDesign.Model.Wing;
+import LowLevelDesign.ElevatorDesign.model.Direction;
+import LowLevelDesign.ElevatorDesign.model.Wing;
 
 public class ElevatorRequest {
 
