@@ -5,20 +5,55 @@ Wing
 Floor
 direction
 
-ElevatorSystem
+ElevatorService
 getElevator(wing , current_floor , direction )
 
 
 Lift
 {
+liftId
 current direction
 current floor
-destination floors
+destinationfloors
 max_floor
 min_floor
 
 adddestinations
 validFloorToadd
+
+run()
+{
+whenver floors are not emtied
+}
+
+
+}
+
+elevatorService
+{
+list<Lifts>
+
+getElevator(Elevator Request)
+
+
+}
+----client side classes
+LiftCLient
+{
+floor;
+wing;
+direction
+isActive
+
+
+callElevator()
+
+
+}
+
+elevatorClientService()
+{
+liftClient will call elevator service here
 
 
 }
