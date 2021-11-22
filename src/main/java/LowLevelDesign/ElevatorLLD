@@ -45,15 +45,13 @@ wing;
 direction
 isActive
 
-
 callElevator()
-
-
 }
 
 elevatorClientService()
 {
-liftClient will call elevator service here
+liftclient.callElevator();
+liftclient1.callElevator();
 
 
 }
