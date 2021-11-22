@@ -1,4 +1,10 @@
-package LowLevelDesign;
+package LowLevelDesign.ElevatorDesign.client;
+
+import LowLevelDesign.ElevatorDesign.request.ElevatorRequest;
+import LowLevelDesign.ElevatorDesign.Model.Lift;
+import LowLevelDesign.ElevatorDesign.Model.Direction;
+import LowLevelDesign.ElevatorDesign.Model.Wing;
+import LowLevelDesign.ElevatorDesign.service.ElevatorService;
 
 public class LiftClient {
     private Wing wing;
@@ -10,7 +16,7 @@ public class LiftClient {
     ElevatorService service;
 
 
-    public LiftClient(LowLevelDesign.Wing wing, int floor, ElevatorService service) {
+    public LiftClient(Wing wing, int floor, ElevatorService service) {
         this.wing = wing;
         this.floor = floor;
         this.direction = Direction.IDEAL;

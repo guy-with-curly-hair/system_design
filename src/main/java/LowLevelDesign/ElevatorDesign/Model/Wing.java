@@ -1,4 +1,4 @@
-package LowLevelDesign;
+package LowLevelDesign.ElevatorDesign.Model;
 
 public enum Wing {
    ARTICA_A ("ARTICA", "A"),

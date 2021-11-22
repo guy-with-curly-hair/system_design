@@ -1,4 +1,7 @@
-package LowLevelDesign;
+package LowLevelDesign.ElevatorDesign.service;
+
+import LowLevelDesign.ElevatorDesign.Model.Lift;
+import LowLevelDesign.ElevatorDesign.Model.Wing;
 
 public class ElevatorStartService {
 
@@ -10,7 +13,7 @@ public class ElevatorStartService {
 
     private static void registerLifts()
     {
-        Lift l1= new Lift(1,Wing.ARTICA_A,10,-2);
+        Lift l1= new Lift(1, Wing.ARTICA_A,10,-2);
         Lift l2= new Lift(2,Wing.ARTICA_A,10,-2);
 /*        Lift l3= new Lift(3,Wing.ARTICA_A,7,0);
         Lift l4= new Lift(4,Wing.PACIFICA_A,8,-3);*/

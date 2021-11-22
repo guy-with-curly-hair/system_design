@@ -1,4 +1,8 @@
-package LowLevelDesign;
+package LowLevelDesign.ElevatorDesign.client;
+
+import LowLevelDesign.ElevatorDesign.Model.Lift;
+import LowLevelDesign.ElevatorDesign.Model.Wing;
+import LowLevelDesign.ElevatorDesign.service.ElevatorService;
 
 public class ElevatorClientService {
 

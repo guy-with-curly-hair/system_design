@@ -1,9 +1,6 @@
-funtions:
+functions:
 
-Client
-Wing
-Floor
-direction
+
 
 ElevatorService
 getElevator(wing , current_floor , direction )

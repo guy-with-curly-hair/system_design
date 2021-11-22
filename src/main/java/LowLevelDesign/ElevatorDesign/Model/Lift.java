@@ -1,6 +1,8 @@
-package LowLevelDesign;
+package LowLevelDesign.ElevatorDesign.Model;
 
-import java.util.List;
+import LowLevelDesign.ElevatorDesign.Model.Direction;
+import LowLevelDesign.ElevatorDesign.Model.Wing;
+
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
@@ -65,7 +67,7 @@ public class Lift extends Thread {
         }
     }
 
-    boolean addDestinations(int floor) {
+    public boolean addDestinations(int floor) {
         validFloor(floor);
         synchronized (this) {
             destinationFloor.add(floor);
@@ -74,7 +76,7 @@ public class Lift extends Thread {
         return true;
     }
 
-    boolean validFloor(int floor) {
+    public boolean validFloor(int floor) {
         return floor > max_floor && floor < min_floor ? false : true;
     }
 
